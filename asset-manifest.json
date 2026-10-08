@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/react-21.git/static/css/main.bef1702f.css",
-    "main.js": "/react-21.git/static/js/main.dcddc57d.js",
-    "index.html": "/react-21.git/index.html",
-    "main.bef1702f.css.map": "/react-21.git/static/css/main.bef1702f.css.map",
-    "main.dcddc57d.js.map": "/react-21.git/static/js/main.dcddc57d.js.map"
+    "main.css": "/react-21/static/css/main.bef1702f.css",
+    "main.js": "/react-21/static/js/main.dcddc57d.js",
+    "index.html": "/react-21/index.html",
+    "main.bef1702f.css.map": "/react-21/static/css/main.bef1702f.css.map",
+    "main.dcddc57d.js.map": "/react-21/static/js/main.dcddc57d.js.map"
   },
   "entrypoints": [
     "static/css/main.bef1702f.css",
