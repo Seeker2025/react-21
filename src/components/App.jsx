@@ -20,7 +20,9 @@ export class App extends Component{
   };
 
   onSubmit = (val) =>{
-    this.setState({ input: val})
+    this.setState({ input: val},
+    () => console.log(this.state.input)  
+    )
   }
 
   render(){
@@ -39,7 +41,11 @@ export class App extends Component{
 
       <Finder/>
       <ColorPicker options = {colorPickerOptions}/>
-      <NewsSearchForm onSubmit={this.onSubmit}/>
+      
+      <NewsSearchForm 
+      onSubmit={this.onSubmit}
+      userInput={this.state.input}
+      />
       
     </div>
     );

@@ -22,7 +22,7 @@ export function  ColorPicker({ options }){
     return (
         <div>
             <h2>Color Picker</h2>
-            <p>Выбран цвет: <b>{ label }</b></p>
+            <p>Обраний колір: <b>{ label }</b></p>
                 {options.map(({ label, color}, index)=>(
                     <button
                     key        = {label}
