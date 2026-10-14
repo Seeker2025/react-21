@@ -1,4 +1,4 @@
-/* Cтили CSS прямо в JSX */
+/* Vanilla styles in JSX */
 import React from 'react';
 
 const styles = {

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const styles = {
     form: {
-    // backgroundColor: 'red',
+    //  backgroundColor: 'red',
         marginTop:      '15px',  
     },
 
@@ -13,7 +13,7 @@ const styles = {
     button: {
        backgroundColor: '#2659e6',
        color:           '#fff',
-       padding:         '8px 15px',
+       padding:         '6px 15px',
        marginLeft:      '15px',
        borderRadius:    '4px',
     },
@@ -23,7 +23,7 @@ export function NewsSearchForm({ onSubmit, userInput }){
     const [query, setQuery] = useState('');
     const handleChange = e => setQuery(e.currentTarget.value);
 
-                                const handleSubmit = e => {
+                              const handleSubmit = e => {
                                     e.preventDefault();
 
                                     onSubmit(query);

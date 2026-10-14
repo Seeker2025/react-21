@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Finder         } from './Finder';
 import { ColorPicker    } from './ColorPicker';
 import { NewsSearchForm } from './Forma';
+import { Clock } from './Clock';
 
 const colorPickerOptions = [
   { label: 'red',     color: '#F44336' },
@@ -46,6 +47,8 @@ export class App extends Component{
       onSubmit={this.onSubmit}
       userInput={this.state.input}
       />
+
+      <Clock/>
       
     </div>
     );
