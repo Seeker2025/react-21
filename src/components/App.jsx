@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import { Finder         } from './Finder';
 import { ColorPicker    } from './ColorPicker';
 import { NewsSearchForm } from './Forma';
-import { Clock } from './Clock';
+import { Clock          } from './Clock';
+import { ToDate         } from './ToDate';  
 
 const colorPickerOptions = [
   { label: 'red',     color: '#F44336' },
@@ -49,6 +50,8 @@ export class App extends Component{
       />
 
       <Clock/>
+
+      <ToDate/>
       
     </div>
     );

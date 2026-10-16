@@ -6,7 +6,7 @@ const styles = {
                 fontSize:        '64',
                 fontWeight:      '500',
                 textAlign:       'left',
-                    },
+                        },
 
             button:    {
                 backgroundColor: '#2659e6',
@@ -14,7 +14,7 @@ const styles = {
                 padding:         '6px 15px',
                 marginLeft:      '15px',
                 borderRadius:    '4px',
-                    }
+                        }
 
                 };
 
@@ -35,9 +35,9 @@ export function Clock(){
         };
     }, []);
 
-    const handleStop = () => {
-        clearInterval(intervalRef.current);
-        };
+        const handleStop = () => {
+            clearInterval(intervalRef.current);
+            };
 
 return (
             <>
