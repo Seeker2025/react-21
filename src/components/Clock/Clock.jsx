@@ -24,7 +24,7 @@ export function Clock(){
 
     useEffect(() =>{
         intervalRef.current = setInterval(() => {
-            console.log('Это интервал каждые 1000ms' + Date.now());
+            // console.log('Это интервал каждые 1000ms' + Date.now());
             setTime(new Date());
             
         }, 1000);

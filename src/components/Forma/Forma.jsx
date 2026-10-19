@@ -3,11 +3,14 @@ import React, { useState } from 'react';
 const styles = {
     form: {
     //  backgroundColor: 'red',
-        marginTop:      '15px',  
+        marginTop:      '15px',
     },
 
     input: {
        backgroundColor: 'grey',
+       height: '21px', 
+       paddingLeft: '5px',
+       
     },
 
     button: {

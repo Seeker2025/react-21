@@ -4,7 +4,8 @@ import { Finder         } from './Finder';
 import { ColorPicker    } from './ColorPicker';
 import { NewsSearchForm } from './Forma';
 import { Clock          } from './Clock';
-import { ToDate         } from './ToDate';  
+import { ToDate         } from './ToDate';
+import { News           } from './News';      
 
 const colorPickerOptions = [
   { label: 'red',     color: '#F44336' },
@@ -52,6 +53,8 @@ export class App extends Component{
       <Clock/>
 
       <ToDate/>
+
+      <News/>
       
     </div>
     );
