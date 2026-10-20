@@ -49,7 +49,7 @@ axios.defaults.headers.common['Authorization'] =
 export function News(){
     const [ article, setArticles ]        = useState([]);
     const [ query, setQuery ]             = useState('');
-    const [ currentPage, setCurrentPage ] = useState(1);
+    // const [ currentPage, setCurrentPage ] = useState(1);
     const [ isLoading, setIsLoading ]     = useState(false);
     const [ error, setError ]             = useState(null);  
 
@@ -57,9 +57,13 @@ export function News(){
          if (!query.trim()) {
             return;
             }
-    fetchArticle({ searchQuery: query, currentPage }).then(
+
+            setIsLoading(true);
+
+    fetchArticle({ searchQuery: query, currentPage: 1 }).then(
         responseArticles =>{
-        setArticles(prevArticles => [...prevArticles, ...responseArticles]);
+        // setArticles(prevArticles => [...prevArticles, ...responseArticles]);
+        setArticles( responseArticles );
         // setCurrentPage(prevCurrentpage => prevCurrentpage + 1);
         },
     )
@@ -76,7 +80,7 @@ export function News(){
 
     const onChangeQuery = query =>{
         setQuery(query);
-        setCurrentPage(1);
+        // setCurrentPage(1);
         setArticles([]);
         setError(null);
     }
@@ -103,7 +107,7 @@ export function News(){
         <p style = {{ fontSize: 24, display: 'flex', alignItems: 'center'}}>
             Завантажуємо...
             <span
-            arial-label = "Иконка"
+            aria-label = "Иконка"
             role = "img"
             style = {{ fontSize: 32, marginLeft: 10 }}
             >
