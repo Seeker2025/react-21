@@ -72,7 +72,7 @@ export function News(){
 
     })
     .finally(() => setIsLoading(false))
-    }, [/*currentPage*/, query]);
+    }, [ query ]);
 
     const onChangeQuery = query =>{
         setQuery(query);
