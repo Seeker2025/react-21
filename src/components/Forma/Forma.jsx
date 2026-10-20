@@ -35,6 +35,8 @@ export function NewsSearchForm({ onSubmit, userInput }){
 
     return (
              <>
+             
+    <h2>Ви щось надрукували</h2>
 
     <form style = {styles.form} onSubmit={handleSubmit}>
 
@@ -53,7 +55,7 @@ export function NewsSearchForm({ onSubmit, userInput }){
 
     </form>
 
-    <h2>Ви щось надрукували</h2>
+    {/* <h2>Ви щось надрукували</h2> */}
     <p>{userInput}</p>
     
              </>

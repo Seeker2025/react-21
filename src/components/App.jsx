@@ -54,6 +54,7 @@ export class App extends Component{
 
       <ToDate/>
 
+      <h2>Введіть слово для пошуку новин</h2>
       <News/>
       
     </div>
