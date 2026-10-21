@@ -93,7 +93,7 @@ export function News(){
     <ul>
         {
             article.map(({ title, url }) => (
-    <li key = {title}>
+    <li key = {url}>
         <a href = {url} style = {styles.ref} target = "_blank" rel = "noopener noreferrer">
             {title}
         </a>
